@@ -1,0 +1,25 @@
+{
+  "version": "0.3",
+  "seed": 1,
+  "offsets_deg": [
+    15,
+    30,
+    60
+  ],
+  "pairs_per_offset": 2,
+  "catch_trials": 2,
+  "frames": 12,
+  "cycles": 1,
+  "stimuli_per_mode": 14,
+  "total_images": 42,
+  "answers_per_mode": {
+    "ARM": 6,
+    "LEG": 6,
+    "SAME": 2
+  },
+  "exact_reversal_pairs_checked": 6,
+  "identical_start_pose": true,
+  "paired_controls_byte_identical": true,
+  "numeric_phase_check_passed": true,
+  "model_evaluation_performed": false
+}

@@ -1,0 +1,37 @@
+PROTOTIPO DE COORDINACIÓN TEMPORAL — v0.3
+
+Ya tienes un ejemplo generado en example_output/. No necesitas ejecutar Python
+para abrir las imágenes ni para registrar respuestas en responses.csv.
+
+Para empezar:
+1. Abre example_output/responses.csv con Excel o una hoja de cálculo.
+2. Sigue presentation_order dentro de cada modo (ordered, shuffled, single).
+3. En una conversación NUEVA para cada ensayo, adjunta solo la imagen indicada
+   y copia el texto de example_output/prompt.txt. Usa un nombre neutro y constante
+   para la imagen adjunta, como stimulus.png. No facilites el nombre del ensayo,
+   el archivo CSV ni las respuestas correctas al modelo.
+4. Anota la respuesta literal en model_answer y los datos del modelo.
+5. Al acabar, contrasta con answer_key.csv usando trial_id Y mode.
+
+Hay 42 imágenes: 14 por modo (6 ARM, 6 LEG y 2 SAME). Proceden de 6 parejas
+independientes y 2 ensayos de control SAME; no son 42 muestras independientes.
+
+Cada pareja tiene las mismas posturas y la misma postura inicial. Solo cambia
+el sentido en el que se recorre el ciclo. Los controles shuffled y single son
+exactamente la misma imagen para las dos respuestas opuestas de la pareja.
+
+pair_demo.png enseña una pareja con etiquetas explicativas. NO se usa como
+entrada de evaluación porque muestra la solución.
+
+Para generar otros estímulos desde una terminal en esta carpeta:
+  python -m pip install -r requirements.txt
+  python coordination_prototype.py --out nuevos_estimulos
+
+Para ejecutar las pruebas:
+  python -m unittest -v
+
+Usa una carpeta de salida nueva: el programa no sobrescribe resultados existentes.
+No necesitas claves API y este código no hace llamadas a modelos ni genera gastos.
+
+Es una prueba del diseño experimental, todavía no una evaluación validada de IA.
+README.md explica en inglés el método, los controles y sus límites.

@@ -1,0 +1,3 @@
+The image shows a stick figure viewed from the side. The red segment is the arm and the blue segment is the opposite leg. Both swing at the same rhythm. When several frames are shown, read their numbered order from left to right. Treat the movement as a continuously repeating cycle, with the last frame followed by the first.
+Which segment's right-most peak occurs shortly before the other's (by less than half a cycle): ARM or LEG? Answer SAME if their peaks coincide. Judge the relative timing around the cycle, not simply which peak is first after the start of the image.
+Answer with exactly one word: ARM, LEG or SAME.
